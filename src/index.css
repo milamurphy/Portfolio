@@ -1,31 +1,41 @@
 body {
   margin: 0;
-  font-family: 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: sans-serif;
+  background-color: black;
 }
 
 .App {
-  background-color: #000000;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   color: white;
 }
 
-.navbar {
+/* ======================================== Navbar ======================================== */
+
+.navbarContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 25px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.navbar h3 {
-  margin: 0;
+.navbar {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #2D392D;
+  border-radius: 100px;
 }
 
 .navbar a {
   text-decoration: none;
   color: white;
-  margin-left: 20px;
+  margin: 0 20px;
+}
+
+/* ======================================== Navbar ======================================== */
+
+.homeContainer {
+  margin-top: 90px;
+  margin-left: 30vw;
 }
