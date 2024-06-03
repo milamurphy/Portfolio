@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: sans-serif;
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 .App {
@@ -24,7 +25,10 @@ body {
   display: flex;
   align-items: center;
   padding: 15px;
-  background-color: #2D392D;
+  background: rgb(38, 50, 37);
+  background: linear-gradient(90deg, rgba(38, 50, 37, 0.9) 0%, rgba(115, 136, 119, 0.5) 100%);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   border-radius: 100px;
 }
 
@@ -94,4 +98,55 @@ body {
   height: 30px;
   margin-right: 5px;
   margin-left: -8px;
+}
+
+/* ======================================== About ======================================== */
+
+.aboutContainer {
+  margin-top: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 90px;
+  gap: 20px;
+}
+
+.aboutMeColumn {
+  flex: 1;
+  padding: 0 50px 0 100px;
+  /* background-color: rgb(106, 65, 65); */
+}
+
+.skillsColumn {
+  flex: 1;
+  padding: 0 100px 0 50px;
+  /* background-color: rgb(54, 54, 103); */
+}
+
+.headingText {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.skillsButtonsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.skillsButtonsContainer button {
+  font-size: 18px;
+  background-color: #99FFB5;
+  padding: 2px 22px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
 }

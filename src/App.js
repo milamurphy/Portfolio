@@ -1,6 +1,7 @@
 import React from 'react';
-import Navbar from './Navbar';
-import Home from './Home';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
 
 // TODO replace logo192.png in manifest.json
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Home/>
+      <About/>
     </div>
   );
 }
