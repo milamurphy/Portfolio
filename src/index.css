@@ -15,14 +15,15 @@ body {
 .navbarContainer {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
 }
 
 .navbar {
-  font-size: 18px;
+  margin-top: 25px;
+  position: fixed;
+  font-size: 20px;
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   background-color: #2D392D;
   border-radius: 100px;
 }
@@ -33,9 +34,64 @@ body {
   margin: 0 20px;
 }
 
-/* ======================================== Navbar ======================================== */
+/* ======================================== Home ======================================== */
 
 .homeContainer {
-  margin-top: 90px;
-  margin-left: 30vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15vw;
+}
+
+.homeTextContainer {
+  font-size: 20px;
+  max-width: 500px;
+}
+
+.greetingText {
+  font-size: 18px;
+  color: #99FFB5;
+  margin-bottom: 20px;
+}
+
+.milaText {
+  font-size: 70px;
+}
+
+.softwareText {
+  font-size: 70px;
+  color: #99FFB5;
+  margin-bottom: 20px;
+}
+
+.buttonsContainer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.buttonsContainer button {
+  font-size: 18px;
+  background-color: #2B2B2B;
+  padding: 5px 14px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
+}
+
+.buttonsContainer img {
+  height: 30px;
+  margin-right: 5px;
+  margin-left: -8px;
 }
