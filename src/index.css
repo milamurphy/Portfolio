@@ -103,7 +103,7 @@ body {
 /* ======================================== About ======================================== */
 
 .aboutContainer {
-  margin-top: 20px;
+  margin-top: 10px;
   min-height: 100vh;
   display: flex;
   flex-direction: row;
@@ -133,12 +133,13 @@ body {
 .skillsButtonsContainer {
   display: flex;
   flex-direction: row;
+  margin: 10px 0;
 }
 
 .skillsButtonsContainer button {
   font-size: 18px;
   background-color: #99FFB5;
-  padding: 2px 22px;
+  padding: 5px 20px;
   margin: 5px;
   border-radius: 10px;
   border: none;
@@ -148,5 +149,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 30px;
+}
+
+.skillsIconsContainer {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.skillIcon {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding: 10px 12px;
+  background-color: #2B2B2B;
+  margin: 8px;
+  border-radius: 10px;
+  line-height: 20px;
+}
+
+.skillIcon i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.skillIcon img {
+  height: 20px;
+  margin-right: 5px;
 }
