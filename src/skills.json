@@ -1,0 +1,68 @@
+{
+    "frontend": [
+        {
+            "name": "HTML",
+            "icon": "devicon-html5-plain colored"
+        },
+        {
+            "name": "CSS",
+            "icon": "devicon-css3-plain colored"
+        },
+        {
+            "name": "JavaScript",
+            "icon": "devicon-javascript-plain colored"
+        },
+        {
+            "name": "React",
+            "icon": "devicon-react-plain colored"
+        },
+        {
+            "name": "Tailwind",
+            "icon": "devicon-tailwindcss-plain colored"
+        },
+        {
+            "name": "SCSS",
+            "icon": "devicon-sass-plain colored"
+        }
+    ],
+    "backend": [
+        {
+            "name": "Java",
+            "icon": "devicon-java-plain colored"
+        },
+        {
+            "name": "C++",
+            "icon": "devicon-cplusplus-plain colored"
+        },
+        {
+            "name": "Python",
+            "icon": "python-original"
+        },
+        {
+            "name": "MySql",
+            "icon": "devicon-mysql-plain colored"
+        },
+        {
+            "name": "MongoDB",
+            "icon": "devicon-mongodb-plain colored"
+        },
+        {
+            "name": "Firebase",
+            "icon": "devicon-firebase-plain colored"
+        }
+    ],
+    "tools": [
+        {
+            "name": "Figma",
+            "icon": "figma-original"
+        },
+        {
+            "name": "GitHub",
+            "icon": "devicon-github-plain colored"
+        },
+        {
+            "name": "VS Code",
+            "icon": "devicon-vscode-plain colored"
+        }
+    ]
+}

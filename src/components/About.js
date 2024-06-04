@@ -1,14 +1,34 @@
 import React, { useState } from 'react';
+import skillsData from '../skills.json';
 
 function About() {
     const [selectedButton, setSelectedButton] = useState('All');
     const buttonNames = ['All', 'Front-End', 'Back-End', 'Tools'];
-    const frontend = ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind', 'SCSS'];
-    const backend = ['Java', 'Python', 'C++', 'MongoDB', 'Firebase', 'MySql'];
-    const tools = ['Figma', 'GitHub', 'VS Code'];
 
     const handleButtonClick = (buttonName) => {
         setSelectedButton(buttonName);
+    };
+
+    const renderSkillIcons = (skills) => {
+        return skills.map(skill => (
+            <div key={skill.name} className="skillIcon">
+                {skill.icon.startsWith('devicon') ? (
+                    <i className={skill.icon}></i>
+                ) : (
+                    <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${skill.name.toLowerCase()}/${skill.icon}.svg`} alt={skill.name} />
+                )}
+                {skill.name}
+            </div>
+        ));
+    };
+
+    const renderAllSkills = () => {
+        const allSkills = [
+            ...skillsData.frontend,
+            ...skillsData.backend,
+            ...skillsData.tools
+        ];
+        return renderSkillIcons(allSkills);
     };
 
     return (
@@ -40,21 +60,10 @@ function About() {
                     ))}
                 </div>
                 <div className="skillsIconsContainer">
-                    <div className="skillIcon"><i className="devicon-html5-plain colored"></i>HTML</div>
-                    <div className="skillIcon"><i className="devicon-css3-plain colored"></i>CSS</div>
-                    <div className="skillIcon"><i className="devicon-javascript-plain colored"></i>JavaScript</div>
-                    <div className="skillIcon"><i className="devicon-react-plain colored"></i>React</div>
-                    <div className="skillIcon"><i className="devicon-tailwindcss-plain colored"></i>Tailwind</div>
-                    <div className="skillIcon"><i className="devicon-sass-plain colored"></i>SCSS</div>
-                    <div className="skillIcon"><i className="devicon-java-plain colored"></i>Java</div>
-                    <div className="skillIcon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"></img>Python</div>
-                    <div className="skillIcon"><i className="devicon-cplusplus-plain colored"></i>C++</div>
-                    <div className="skillIcon"><i className="devicon-mongodb-plain colored"></i>MongoDB</div>
-                    <div className="skillIcon"><i className="devicon-firebase-plain colored"></i>Firebase</div>
-                    <div className="skillIcon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />Figma</div>
-                    <div className="skillIcon"><i className="devicon-github-plain colored"></i>GitHub</div>
-                    <div className="skillIcon"><i className="devicon-vscode-plain colored"></i>VS Code</div>
-                    <div className="skillIcon"><i className="devicon-mysql-plain colored"></i>MySql</div>
+                    {selectedButton === 'All' && renderAllSkills()}
+                    {selectedButton === 'Front-End' && renderSkillIcons(skillsData.frontend)}
+                    {selectedButton === 'Back-End' && renderSkillIcons(skillsData.backend)}
+                    {selectedButton === 'Tools' && renderSkillIcons(skillsData.tools)}
                 </div>
             </div>
         </div>
