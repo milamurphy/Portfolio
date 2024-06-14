@@ -11,6 +11,40 @@ body {
   color: white;
 }
 
+/* =================================== Gradient Background =================================== */
+#gradientContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#gradientBackground {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(250px);
+  background-color: #638c71;
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* ======================================== Navbar ======================================== */
 
 .navbarContainer {
@@ -28,7 +62,7 @@ body {
   background: rgb(38, 50, 37);
   background: linear-gradient(90deg, rgba(38, 50, 37, 0.9) 0%, rgba(115, 136, 119, 0.5) 100%);
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   border-radius: 100px;
 }
 
@@ -80,7 +114,7 @@ body {
 
 .buttonsContainer button {
   font-size: 18px;
-  background-color: #2B2B2B;
+  background-color: rgba(155, 155, 155, 0.2);
   padding: 5px 14px;
   margin: 5px;
   border-radius: 10px;
@@ -149,6 +183,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
 }
 
 .skillsIconsContainer {
@@ -161,9 +196,8 @@ body {
 .skillIcon {
   display: flex;
   align-items: center;
-  font-weight: bold;
   padding: 10px 12px;
-  background-color: #2B2B2B;
+  background-color: rgba(155, 155, 155, 0.2);
   margin: 8px;
   border-radius: 10px;
   line-height: 20px;
@@ -177,4 +211,14 @@ body {
 .skillIcon img {
   height: 20px;
   margin-right: 10px;
+}
+
+/* ======================================== Projects ======================================== */
+
+.projectsContainer {
+  background-color: rgb(58, 39, 107);
+}
+
+.projectColumn {
+  display: flex;
 }
