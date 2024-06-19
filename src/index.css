@@ -27,7 +27,7 @@ body.light {
 }
 
 #gradientBackground.light {
-  background-color: #287943;
+  background-color: #8FBF7F;
 }
 
 .skillsButtonsContainer button.dark {
@@ -48,6 +48,19 @@ body.light {
 .skillsButtonsContainer button.light.selected {
   background-color: #287943;
   color: white;
+}
+
+body.light .navbar {
+  background-color: #D5F4D5;
+  box-shadow: 0 4px 4px rgba(95, 95, 95, 0.1);
+}
+
+body.light .navbar a {
+  color: #025A4E;
+}
+
+body.light .buttonsContainer a {
+  color: black;
 }
 
 /* =================================== Gradient Background =================================== */
@@ -148,6 +161,11 @@ body.light {
 .buttonsContainer {
   display: flex;
   margin-top: 20px;
+}
+
+.buttonsContainer a {
+  text-decoration: none;
+  color: white;
 }
 
 .buttonsContainer button {

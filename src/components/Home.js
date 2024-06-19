@@ -15,8 +15,8 @@ function Home() {
                 </div>
                 <div className="buttonsContainer">
                     <button><img src="https://img.icons8.com/fluency-systems-filled/48/99ffb5/regular-document.png" alt="resume icon" />Resume</button>
-                    <button><img src="https://img.icons8.com/fluency-systems-filled/48/99ffb5/github.png" alt="github icon" />GitHub</button>
-                    <button><img src="https://img.icons8.com/fluency-systems-filled/48/99ffb5/linkedin.png" alt="linkedin icon" />LinkedIn</button>
+                    <button><img src="https://img.icons8.com/fluency-systems-filled/48/99ffb5/github.png" alt="github icon" /><a href="https://github.com/milamurphy" target="_blank">GitHub</a></button>
+                    <button><img src="https://img.icons8.com/fluency-systems-filled/48/99ffb5/linkedin.png" alt="linkedin icon" /><a href="https://www.linkedin.com/in/milamurphy/" target="_blank">LinkedIn</a></button>
                     <button><img src="https://img.icons8.com/fluency-systems-filled/48/99ffb5/new-post.png" alt="email icon" />Email</button>
                 </div>
             </div>
