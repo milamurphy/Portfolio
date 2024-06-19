@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  /*font-family: "Be Vietnam Pro", sans-serif; */
   scroll-behavior: smooth;
   background-color: black;
   transition: 0.4s;
@@ -272,9 +273,27 @@ body.light .buttonsContainer a {
 /* ======================================== Projects ======================================== */
 
 .projectsContainer {
-  background-color: rgb(58, 39, 107);
+  display: flex;
+  justify-content: center;
 }
 
 .projectColumn {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project img {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.projectTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.projectDesc {
+  color: grey;
 }
