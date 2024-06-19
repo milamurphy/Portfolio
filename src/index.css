@@ -1,13 +1,52 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: black;
   scroll-behavior: smooth;
+  background-color: black;
+  transition: 0.4s;
 }
 
 .App {
   display: flex;
   flex-direction: column;
+  color: white;
+}
+
+/* =================================== Light Mode =================================== */
+body.light {
+  background-color: #DDDFB7;
+}
+
+.App.light {
+  color: black;
+}
+
+.homeContainer.light .greetingText,
+.homeContainer.light .softwareText {
+  color: #025A4E;
+}
+
+#gradientBackground.light {
+  background-color: #287943;
+}
+
+.skillsButtonsContainer button.dark {
+  background-color: transparent;
+  color: white;
+}
+
+.skillsButtonsContainer button.dark.selected {
+  background-color: #99FFB5;
+  color: black;
+}
+
+.skillsButtonsContainer button.light {
+  background-color: transparent;
+  color: black;
+}
+
+.skillsButtonsContainer button.light.selected {
+  background-color: #287943;
   color: white;
 }
 
@@ -28,7 +67,7 @@ body {
   height: 500px;
   border-radius: 50%;
   filter: blur(250px);
-  background-color: #638c71;
+  /* background-color: #638c71; */
   background-size: 200% 200%;
   animation: gradientAnimation 10s ease infinite;
 }
@@ -59,8 +98,7 @@ body {
   display: flex;
   align-items: center;
   padding: 15px;
-  background: rgb(38, 50, 37);
-  background: linear-gradient(90deg, rgba(38, 50, 37, 0.9) 0%, rgba(115, 136, 119, 0.5) 100%);
+  background-color: rgba(115, 136, 119, 0.3);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   border-radius: 100px;

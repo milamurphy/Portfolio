@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import skillsData from '../skills.json';
+import { ThemeContext } from '../ThemeContext';
 
 function About() {
+    const { theme } = useContext(ThemeContext);
     const [selectedButton, setSelectedButton] = useState('All');
     const buttonNames = ['All', 'Front-End', 'Back-End', 'Tools'];
 
@@ -32,7 +34,7 @@ function About() {
     };
 
     return (
-        <div className="aboutContainer">
+        <div className={`aboutContainer ${theme}`}>
             <div className="aboutMeColumn">
                 <div className="headingText">About Me</div>
                 <p>
@@ -49,10 +51,7 @@ function About() {
                     {buttonNames.map(buttonName => (
                         <button
                             key={buttonName}
-                            style={{
-                                backgroundColor: selectedButton === buttonName ? '#99FFB5' : 'transparent',
-                                color: selectedButton === buttonName ? 'black' : 'white'
-                            }}
+                            className={`${theme === 'light' ? 'light' : 'dark'} ${selectedButton === buttonName ? 'selected' : ''}`}
                             onClick={() => handleButtonClick(buttonName)}
                         >
                             {buttonName}
